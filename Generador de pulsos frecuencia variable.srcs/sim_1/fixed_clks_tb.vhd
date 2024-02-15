@@ -2,13 +2,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-entity pulse_generator_tb is
+entity fixed_clks_tb is
 --  Port ( );
-end pulse_generator_tb;
+end fixed_clks_tb;
 
-architecture testbench of pulse_generator_tb is
+architecture testbench of fixed_clks_tb is
     
-    component pulse_generator is
+    component fixed_clks is
         port(
         outputs: out std_logic_vector(7 downto 0);
         clk100mhz:in std_logic;
@@ -21,7 +21,7 @@ architecture testbench of pulse_generator_tb is
     
     constant Tclk: time :=1ns;
 begin
-    unit_top: pulse_generator
+    unit_top: fixed_clks
         port map(
             clk100mhz=>clk100mhz,
             reset=>reset,
