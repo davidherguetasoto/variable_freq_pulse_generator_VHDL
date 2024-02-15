@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="variable_clk_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="variable_clk_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,118.614 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,143.755 ns"></ZoomEndTime>
+      <Cursor1Time time="1,128.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/variable_clk_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/clk100mhz" type="logic">
+      <obj_property name="ElementShortName">clk100mhz</obj_property>
+      <obj_property name="ObjectShortName">clk100mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/var_clk" type="logic">
+      <obj_property name="ElementShortName">var_clk</obj_property>
+      <obj_property name="ObjectShortName">var_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/up" type="logic">
+      <obj_property name="ElementShortName">up</obj_property>
+      <obj_property name="ObjectShortName">up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/up100" type="logic">
+      <obj_property name="ElementShortName">up100</obj_property>
+      <obj_property name="ObjectShortName">up100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/down" type="logic">
+      <obj_property name="ElementShortName">down</obj_property>
+      <obj_property name="ObjectShortName">down</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/down100" type="logic">
+      <obj_property name="ElementShortName">down100</obj_property>
+      <obj_property name="ObjectShortName">down100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/unit_variable_clock/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/unit_variable_clock/precharge" type="other">
+      <obj_property name="ElementShortName">precharge</obj_property>
+      <obj_property name="ObjectShortName">precharge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/variable_clk_tb/unit_variable_clock/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+</wave_config>
