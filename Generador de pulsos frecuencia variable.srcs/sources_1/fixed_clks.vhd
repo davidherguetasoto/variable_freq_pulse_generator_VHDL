@@ -21,7 +21,7 @@ end fixed_clks;
 architecture behavioral of fixed_clks is
 
 constant T1: integer:=1;
-constant T2: integer:=5;
+constant T2: integer:=2;
 constant T3: integer:=50;
 constant T4: integer:=500;
 constant T5: integer:=5000;
