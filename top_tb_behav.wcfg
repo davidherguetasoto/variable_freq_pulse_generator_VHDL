@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="400.001 ns"></ZoomEndTime>
+      <Cursor1Time time="400.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/pulse_out" type="logic">
+      <obj_property name="ElementShortName">pulse_out</obj_property>
+      <obj_property name="ObjectShortName">pulse_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/inst_top/freq_selector_fixed_clk" type="array">
+      <obj_property name="ElementShortName">freq_selector_fixed_clk[7:0]</obj_property>
+      <obj_property name="ObjectShortName">freq_selector_fixed_clk[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/inst_top/freq_duty_selector" type="logic">
+      <obj_property name="ElementShortName">freq_duty_selector</obj_property>
+      <obj_property name="ObjectShortName">freq_duty_selector</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/button_up" type="logic">
+      <obj_property name="ElementShortName">button_up</obj_property>
+      <obj_property name="ObjectShortName">button_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/button_down" type="logic">
+      <obj_property name="ElementShortName">button_down</obj_property>
+      <obj_property name="ObjectShortName">button_down</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/button_left" type="logic">
+      <obj_property name="ElementShortName">button_left</obj_property>
+      <obj_property name="ObjectShortName">button_left</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/button_right" type="logic">
+      <obj_property name="ElementShortName">button_right</obj_property>
+      <obj_property name="ObjectShortName">button_right</obj_property>
+   </wvobject>
+   <wvobject fp_name="group34" type="group">
+      <obj_property name="label">8bit_mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/inst_top/inst_one_hot_8bit_mux/input" type="array">
+         <obj_property name="ElementShortName">input[7:0]</obj_property>
+         <obj_property name="ObjectShortName">input[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_one_hot_8bit_mux/output" type="logic">
+         <obj_property name="ElementShortName">output</obj_property>
+         <obj_property name="ObjectShortName">output</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_one_hot_8bit_mux/input_select" type="array">
+         <obj_property name="ElementShortName">input_select[7:0]</obj_property>
+         <obj_property name="ObjectShortName">input_select[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group58" type="group">
+      <obj_property name="label">variable_duty_cycle_clk</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/clk_in" type="logic">
+         <obj_property name="ElementShortName">clk_in</obj_property>
+         <obj_property name="ObjectShortName">clk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/pulse_out" type="logic">
+         <obj_property name="ElementShortName">pulse_out</obj_property>
+         <obj_property name="ObjectShortName">pulse_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/up" type="logic">
+         <obj_property name="ElementShortName">up</obj_property>
+         <obj_property name="ObjectShortName">up</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/down" type="logic">
+         <obj_property name="ElementShortName">down</obj_property>
+         <obj_property name="ObjectShortName">down</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/reg1" type="array">
+         <obj_property name="ElementShortName">reg1[9:0]</obj_property>
+         <obj_property name="ObjectShortName">reg1[9:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/output1" type="logic">
+         <obj_property name="ElementShortName">output1</obj_property>
+         <obj_property name="ObjectShortName">output1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/index1" type="other">
+         <obj_property name="ElementShortName">index1</obj_property>
+         <obj_property name="ObjectShortName">index1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_variable_duty_cycle_clk/index_out1" type="other">
+         <obj_property name="ElementShortName">index_out1</obj_property>
+         <obj_property name="ObjectShortName">index_out1</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group40" type="group">
+      <obj_property name="label">2bit_mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/inst_top/inst_mux_2_1/input" type="array">
+         <obj_property name="ElementShortName">input[1:0]</obj_property>
+         <obj_property name="ObjectShortName">input[1:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_mux_2_1/input_select" type="logic">
+         <obj_property name="ElementShortName">input_select</obj_property>
+         <obj_property name="ObjectShortName">input_select</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/inst_top/inst_mux_2_1/output" type="logic">
+         <obj_property name="ElementShortName">output</obj_property>
+         <obj_property name="ObjectShortName">output</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

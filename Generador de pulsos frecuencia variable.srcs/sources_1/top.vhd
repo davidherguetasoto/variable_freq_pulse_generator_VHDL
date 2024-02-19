@@ -2,41 +2,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity top is
-    Port ( input_buttons: in std_logic_vector(3 downto 0);
+    Port ( input_buttons: in std_logic_vector(5 downto 0);
            reset : in STD_LOGIC;
            clk100mhz : in STD_LOGIC;
            freq_duty_selector : in STD_LOGIC;
            freq_selector_fixed_clk : in STD_LOGIC_VECTOR (7 downto 0);
-           pulse_out : out STD_LOGIC);
+           pulse_out : out STD_LOGIC;
+           fixed_clk_out: out std_logic);
 end top;
 
 architecture RTL of top is
-
-    component debouncer is 
-    port(
-        CLK    : in std_logic;
-	    btn_in	: in std_logic;
-	    btn_out	: out std_logic;
-	    reset: in std_logic);
-	 end component;
-	 
-	 component edgedtctr is 
-	 port(
-	   CLK : in std_logic;       --Entrada del reloj 
-       sync_in : in std_logic;   --Entrada síncrona 
-       edge : out std_logic;     --Flanco de salida
-       reset: in std_logic       --Señal de reset
-     );
-     end component;
-     
-     component synchrnzr is
-     port(
-        clk : in std_logic;
-        async_in : in std_logic;
-        sync_out : out std_logic;
-        reset: in std_logic
-     );
-     end component;
      
      component fixed_clks is 
      port(
@@ -100,10 +75,6 @@ architecture RTL of top is
      );
      end component;
      
-     signal synchr_out: std_logic_vector(3 downto 0);
-     signal deb_out: std_logic_vector(3 downto 0);
-     signal edge_out: std_logic_vector(3 downto 0);
-     
      signal clk50mhz: std_logic;
      signal clk25mhz: std_logic;
      signal clk10mhz: std_logic;
@@ -120,25 +91,7 @@ architecture RTL of top is
      
 begin
 
-    input_buttons_conditioning: for i in 0 to 3 generate
-    inst_synchrnyzr: SYNCHRNZR port map(
-                            clk=>clk100mhz,
-                            async_in=>input_buttons(i),
-                            sync_out=>synchr_out(i),
-                            reset=>reset);
-                            
-    inst_debouncer: DEBOUNCER port map(
-                            CLK=>clk100mhz,
-                            btn_in=>synchr_out(i),
-                            btn_out=>deb_out(i),
-                            reset=>reset);
-                            
-    inst_edgedtctr: EDGEDTCTR port map(
-                            CLK=>clk100mhz,
-                            sync_in=>deb_out(i),
-                            edge=>edge_out(i),
-                            reset=>reset);
-    end generate input_buttons_conditioning;
+    
     
     inst_fixed_clks: fixed_clks port map(
                             clk100mhz => clk100mhz,
@@ -153,10 +106,10 @@ begin
                             clk1khz => clk1khz);
                             
     inst_freq_selector: freq_selector port map(
-                            up10 => edge_out(0),
-                            up100 => edge_out(1),
-                            down10 => edge_out(2),
-                            down100 => edge_out(3),
+                            up10 => input_buttons(0),
+                            up100 => input_buttons(1),
+                            down10 => input_buttons(2),
+                            down100 => input_buttons(3),
                             clk => clk100mhz,
                             reset => reset,
                             precharge => precharge);
@@ -184,13 +137,15 @@ begin
                             clk_in => mux_8_1_out,
                             reset => reset,
                             pulse_out => variable_duty_cycle_clk_out,
-                            up => edge_out(0),
-                            down => edge_out(2));
+                            up => input_buttons(4),
+                            down => input_buttons(5));
                             
     inst_mux_2_1: mux_2_1 port map(
                              input(0) => variable_freq_clk_out,
                              input(1) => variable_duty_cycle_clk_out,
                              input_select => freq_duty_selector,
                              output => pulse_out);
+                             
+    fixed_clk_out<=mux_8_1_out;
 
 end RTL;
