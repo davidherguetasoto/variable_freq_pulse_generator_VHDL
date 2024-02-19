@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="basys3_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="basys3_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="6.000001 us"></ZoomEndTime>
+      <Cursor1Time time="6.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/basys3_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/btnU" type="logic">
+      <obj_property name="ElementShortName">btnU</obj_property>
+      <obj_property name="ObjectShortName">btnU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/btnD" type="logic">
+      <obj_property name="ElementShortName">btnD</obj_property>
+      <obj_property name="ObjectShortName">btnD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/btnL" type="logic">
+      <obj_property name="ElementShortName">btnL</obj_property>
+      <obj_property name="ObjectShortName">btnL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/btnR" type="logic">
+      <obj_property name="ElementShortName">btnR</obj_property>
+      <obj_property name="ObjectShortName">btnR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/pulse_out" type="logic">
+      <obj_property name="ElementShortName">pulse_out</obj_property>
+      <obj_property name="ObjectShortName">pulse_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/input_buttons" type="array">
+      <obj_property name="ElementShortName">input_buttons[5:0]</obj_property>
+      <obj_property name="ObjectShortName">input_buttons[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group499" type="group">
+      <obj_property name="label">var_duty_clk</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_variable_duty_cycle_clk/pulse_out" type="logic">
+         <obj_property name="ElementShortName">pulse_out</obj_property>
+         <obj_property name="ObjectShortName">pulse_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/freq_duty_selector" type="logic">
+         <obj_property name="ElementShortName">freq_duty_selector</obj_property>
+         <obj_property name="ObjectShortName">freq_duty_selector</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/freq_selector_fixed_clk" type="array">
+         <obj_property name="ElementShortName">freq_selector_fixed_clk[7:0]</obj_property>
+         <obj_property name="ObjectShortName">freq_selector_fixed_clk[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_variable_duty_cycle_clk/up" type="logic">
+         <obj_property name="ElementShortName">up</obj_property>
+         <obj_property name="ObjectShortName">up</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_variable_duty_cycle_clk/down" type="logic">
+         <obj_property name="ElementShortName">down</obj_property>
+         <obj_property name="ObjectShortName">down</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_variable_duty_cycle_clk/index1" type="other">
+         <obj_property name="ElementShortName">index1</obj_property>
+         <obj_property name="ObjectShortName">index1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_variable_duty_cycle_clk/index_out1" type="other">
+         <obj_property name="ElementShortName">index_out1</obj_property>
+         <obj_property name="ObjectShortName">index_out1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_variable_duty_cycle_clk/reg1" type="array">
+         <obj_property name="ElementShortName">reg1[9:0]</obj_property>
+         <obj_property name="ObjectShortName">reg1[9:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group304" type="group">
+      <obj_property name="label">button1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group279" type="group">
+         <obj_property name="label">synchronizer1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_synchrnyzr/async_in" type="logic">
+            <obj_property name="ElementShortName">async_in</obj_property>
+            <obj_property name="ObjectShortName">async_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_synchrnyzr/sync_out" type="logic">
+            <obj_property name="ElementShortName">sync_out</obj_property>
+            <obj_property name="ObjectShortName">sync_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_synchrnyzr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[1:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group280" type="group">
+         <obj_property name="label">debouncer1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_debouncer/btn_in" type="logic">
+            <obj_property name="ElementShortName">btn_in</obj_property>
+            <obj_property name="ObjectShortName">btn_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_debouncer/btn_out" type="logic">
+            <obj_property name="ElementShortName">btn_out</obj_property>
+            <obj_property name="ObjectShortName">btn_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_debouncer/btn_prev" type="logic">
+            <obj_property name="ElementShortName">btn_prev</obj_property>
+            <obj_property name="ObjectShortName">btn_prev</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_debouncer/counter" type="array">
+            <obj_property name="ElementShortName">counter[20:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[20:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group281" type="group">
+         <obj_property name="label">edge1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_edgedtctr/sync_in" type="logic">
+            <obj_property name="ElementShortName">sync_in</obj_property>
+            <obj_property name="ObjectShortName">sync_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_edgedtctr/edge" type="logic">
+            <obj_property name="ElementShortName">edge</obj_property>
+            <obj_property name="ObjectShortName">edge</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(0)\/inst_edgedtctr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[2:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group305" type="group">
+      <obj_property name="label">button2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group301" type="group">
+         <obj_property name="label">synchronizer2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_synchrnyzr/async_in" type="logic">
+            <obj_property name="ElementShortName">async_in</obj_property>
+            <obj_property name="ObjectShortName">async_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_synchrnyzr/sync_out" type="logic">
+            <obj_property name="ElementShortName">sync_out</obj_property>
+            <obj_property name="ObjectShortName">sync_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_synchrnyzr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[1:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group302" type="group">
+         <obj_property name="label">debouncer2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_debouncer/btn_in" type="logic">
+            <obj_property name="ElementShortName">btn_in</obj_property>
+            <obj_property name="ObjectShortName">btn_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_debouncer/btn_out" type="logic">
+            <obj_property name="ElementShortName">btn_out</obj_property>
+            <obj_property name="ObjectShortName">btn_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_debouncer/btn_prev" type="logic">
+            <obj_property name="ElementShortName">btn_prev</obj_property>
+            <obj_property name="ObjectShortName">btn_prev</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_debouncer/counter" type="array">
+            <obj_property name="ElementShortName">counter[20:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[20:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group303" type="group">
+         <obj_property name="label">edge2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_edgedtctr/sync_in" type="logic">
+            <obj_property name="ElementShortName">sync_in</obj_property>
+            <obj_property name="ObjectShortName">sync_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_edgedtctr/edge" type="logic">
+            <obj_property name="ElementShortName">edge</obj_property>
+            <obj_property name="ObjectShortName">edge</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(1)\/inst_edgedtctr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[2:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group329" type="group">
+      <obj_property name="label">button3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group323" type="group">
+         <obj_property name="label">synchronizer3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_synchrnyzr/async_in" type="logic">
+            <obj_property name="ElementShortName">async_in</obj_property>
+            <obj_property name="ObjectShortName">async_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_synchrnyzr/sync_out" type="logic">
+            <obj_property name="ElementShortName">sync_out</obj_property>
+            <obj_property name="ObjectShortName">sync_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_synchrnyzr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[1:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group324" type="group">
+         <obj_property name="label">debouncer3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_debouncer/btn_in" type="logic">
+            <obj_property name="ElementShortName">btn_in</obj_property>
+            <obj_property name="ObjectShortName">btn_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_debouncer/btn_out" type="logic">
+            <obj_property name="ElementShortName">btn_out</obj_property>
+            <obj_property name="ObjectShortName">btn_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_debouncer/btn_prev" type="logic">
+            <obj_property name="ElementShortName">btn_prev</obj_property>
+            <obj_property name="ObjectShortName">btn_prev</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_debouncer/counter" type="array">
+            <obj_property name="ElementShortName">counter[20:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[20:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group325" type="group">
+         <obj_property name="label">edge3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_edgedtctr/sync_in" type="logic">
+            <obj_property name="ElementShortName">sync_in</obj_property>
+            <obj_property name="ObjectShortName">sync_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_edgedtctr/edge" type="logic">
+            <obj_property name="ElementShortName">edge</obj_property>
+            <obj_property name="ObjectShortName">edge</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(2)\/inst_edgedtctr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[2:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group350" type="group">
+      <obj_property name="label">button4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group347" type="group">
+         <obj_property name="label">synchronizer4</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_synchrnyzr/async_in" type="logic">
+            <obj_property name="ElementShortName">async_in</obj_property>
+            <obj_property name="ObjectShortName">async_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_synchrnyzr/sync_out" type="logic">
+            <obj_property name="ElementShortName">sync_out</obj_property>
+            <obj_property name="ObjectShortName">sync_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_synchrnyzr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[1:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group348" type="group">
+         <obj_property name="label">debouncer4</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_debouncer/btn_in" type="logic">
+            <obj_property name="ElementShortName">btn_in</obj_property>
+            <obj_property name="ObjectShortName">btn_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_debouncer/btn_out" type="logic">
+            <obj_property name="ElementShortName">btn_out</obj_property>
+            <obj_property name="ObjectShortName">btn_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_debouncer/btn_prev" type="logic">
+            <obj_property name="ElementShortName">btn_prev</obj_property>
+            <obj_property name="ObjectShortName">btn_prev</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_debouncer/counter" type="array">
+            <obj_property name="ElementShortName">counter[20:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[20:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group349" type="group">
+         <obj_property name="label">edge4</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_edgedtctr/sync_in" type="logic">
+            <obj_property name="ElementShortName">sync_in</obj_property>
+            <obj_property name="ObjectShortName">sync_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_edgedtctr/edge" type="logic">
+            <obj_property name="ElementShortName">edge</obj_property>
+            <obj_property name="ObjectShortName">edge</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_100mhz(3)\/inst_edgedtctr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[2:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group374" type="group">
+      <obj_property name="label">button5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group368" type="group">
+         <obj_property name="label">synchronizer5</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_synchrnyzr/async_in" type="logic">
+            <obj_property name="ElementShortName">async_in</obj_property>
+            <obj_property name="ObjectShortName">async_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_synchrnyzr/sync_out" type="logic">
+            <obj_property name="ElementShortName">sync_out</obj_property>
+            <obj_property name="ObjectShortName">sync_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_synchrnyzr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[1:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group369" type="group">
+         <obj_property name="label">debouncer5</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_debouncer/btn_in" type="logic">
+            <obj_property name="ElementShortName">btn_in</obj_property>
+            <obj_property name="ObjectShortName">btn_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_debouncer/btn_out" type="logic">
+            <obj_property name="ElementShortName">btn_out</obj_property>
+            <obj_property name="ObjectShortName">btn_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_debouncer/btn_prev" type="logic">
+            <obj_property name="ElementShortName">btn_prev</obj_property>
+            <obj_property name="ObjectShortName">btn_prev</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_debouncer/counter" type="array">
+            <obj_property name="ElementShortName">counter[20:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[20:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group373" type="group">
+         <obj_property name="label">edge5</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_edgedtctr/sync_in" type="logic">
+            <obj_property name="ElementShortName">sync_in</obj_property>
+            <obj_property name="ObjectShortName">sync_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_edgedtctr/edge" type="logic">
+            <obj_property name="ElementShortName">edge</obj_property>
+            <obj_property name="ObjectShortName">edge</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(4)\/inst_edgedtctr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[2:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group481" type="group">
+      <obj_property name="label">button6</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group478" type="group">
+         <obj_property name="label">synchronizer6</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_synchrnyzr/async_in" type="logic">
+            <obj_property name="ElementShortName">async_in</obj_property>
+            <obj_property name="ObjectShortName">async_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_synchrnyzr/sync_out" type="logic">
+            <obj_property name="ElementShortName">sync_out</obj_property>
+            <obj_property name="ObjectShortName">sync_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_synchrnyzr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[1:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group479" type="group">
+         <obj_property name="label">debouncer6</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_debouncer/btn_in" type="logic">
+            <obj_property name="ElementShortName">btn_in</obj_property>
+            <obj_property name="ObjectShortName">btn_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_debouncer/btn_out" type="logic">
+            <obj_property name="ElementShortName">btn_out</obj_property>
+            <obj_property name="ObjectShortName">btn_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_debouncer/btn_prev" type="logic">
+            <obj_property name="ElementShortName">btn_prev</obj_property>
+            <obj_property name="ObjectShortName">btn_prev</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_debouncer/counter" type="array">
+            <obj_property name="ElementShortName">counter[20:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[20:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group480" type="group">
+         <obj_property name="label">edge6</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_edgedtctr/sync_in" type="logic">
+            <obj_property name="ElementShortName">sync_in</obj_property>
+            <obj_property name="ObjectShortName">sync_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_edgedtctr/edge" type="logic">
+            <obj_property name="ElementShortName">edge</obj_property>
+            <obj_property name="ObjectShortName">edge</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys3_tb/inst_basys3/\input_buttons_conditioning_fixed_clk(5)\/inst_edgedtctr/sreg" type="array">
+            <obj_property name="ElementShortName">sreg[2:0]</obj_property>
+            <obj_property name="ObjectShortName">sreg[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group519" type="group">
+      <obj_property name="label">8bit_mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_one_hot_8bit_mux/input" type="array">
+         <obj_property name="ElementShortName">input[7:0]</obj_property>
+         <obj_property name="ObjectShortName">input[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_one_hot_8bit_mux/input_select" type="array">
+         <obj_property name="ElementShortName">input_select[7:0]</obj_property>
+         <obj_property name="ObjectShortName">input_select[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys3_tb/inst_basys3/unit_top/inst_one_hot_8bit_mux/output" type="logic">
+         <obj_property name="ElementShortName">output</obj_property>
+         <obj_property name="ObjectShortName">output</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

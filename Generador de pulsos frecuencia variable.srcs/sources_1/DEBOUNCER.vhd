@@ -29,7 +29,7 @@ begin
 			btn_prev <= btn_in;
 		elsif (counter(CNT_SIZE) = '0') then
 			counter <= counter + 1;
-        	else
+        else
 			btn_out <= btn_prev;
 		end if;
 	   end if;

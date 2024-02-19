@@ -24,6 +24,6 @@ begin
  end process;
  
  edge<= '0' when reset='0' else  --Si se activa el RESET, la salida se limpiará también
-        '1' when sreg="001" else --Se activa la salida cuando se detecta un flanco positivo
+        '1' when sreg="110" else --Se activa la salida cuando se detecta un flanco negativo
         '0';
 end BEHAVIORAL;
