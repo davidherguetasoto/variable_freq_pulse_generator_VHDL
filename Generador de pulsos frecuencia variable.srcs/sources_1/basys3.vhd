@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-entity nexys3ddr is
+entity basys3 is
     port(   
         JB: out std_logic_vector(7 downto 0);
         reset: in std_logic;
@@ -13,9 +13,9 @@ entity nexys3ddr is
         clk: in std_logic;
         sw: in std_logic_vector(15 downto 0);
         led: out std_logic_vector(15 downto 0));
-end nexys3ddr;
+end basys3;
 
-architecture RTL of nexys3ddr is
+architecture RTL of basys3 is
 
     component debouncer is 
     port(
