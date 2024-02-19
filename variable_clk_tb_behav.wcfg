@@ -10,15 +10,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="996.806 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,000.639 ns"></ZoomEndTime>
+      <ZoomStartTime time="978.700 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,004.261 ns"></ZoomEndTime>
       <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="196"></NameColumnWidth>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="9" />
+   <wave_markers>
+      <marker time="206000" label="" />
+      <marker time="197000" label="" />
+   </wave_markers>
    <wvobject fp_name="/duty_cycle_select_tb/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
@@ -39,12 +43,21 @@
       <obj_property name="ElementShortName">down</obj_property>
       <obj_property name="ObjectShortName">down</obj_property>
    </wvobject>
-   <wvobject fp_name="/duty_cycle_select_tb/inst_duty_cycle_select/reg" type="array">
-      <obj_property name="ElementShortName">reg[9:0]</obj_property>
-      <obj_property name="ObjectShortName">reg[9:0]</obj_property>
+   <wvobject fp_name="/duty_cycle_select_tb/inst_duty_cycle_select/reg1" type="array">
+      <obj_property name="ElementShortName">reg1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">reg1[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/duty_cycle_select_tb/inst_duty_cycle_select/index" type="other">
-      <obj_property name="ElementShortName">index</obj_property>
-      <obj_property name="ObjectShortName">index</obj_property>
+   <wvobject fp_name="/duty_cycle_select_tb/inst_duty_cycle_select/index1" type="other">
+      <obj_property name="ElementShortName">index1</obj_property>
+      <obj_property name="ObjectShortName">index1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/duty_cycle_select_tb/inst_duty_cycle_select/index_out1" type="other">
+      <obj_property name="ElementShortName">index_out1</obj_property>
+      <obj_property name="ObjectShortName">index_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/duty_cycle_select_tb/inst_duty_cycle_select/output1" type="logic">
+      <obj_property name="ElementShortName">output1</obj_property>
+      <obj_property name="ObjectShortName">output1</obj_property>
    </wvobject>
 </wave_config>
