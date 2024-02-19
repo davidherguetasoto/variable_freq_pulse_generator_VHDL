@@ -2,15 +2,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
-entity variable_clk is
+entity variable_freq_clk is
     Port ( clk100mhz : in STD_LOGIC;
            reset : in STD_LOGIC;
            en: in std_logic;
            precharge: in std_logic_vector(19 downto 0);
            var_clk: out std_logic);
-end variable_clk;
+end variable_freq_clk;
 
-architecture Behavioral of variable_clk is
+architecture Behavioral of variable_freq_clk is
 
     signal counter1: std_logic_vector(19 downto 0);
     signal counter2: std_logic_vector(19 downto 0);

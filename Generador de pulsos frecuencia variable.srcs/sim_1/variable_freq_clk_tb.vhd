@@ -2,13 +2,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
-entity variable_clk_tb is
+entity variable_freq_clk_tb is
 --  Port ( );
-end variable_clk_tb;
+end variable_freq_clk_tb;
 
-architecture Testbench of variable_clk_tb is
+architecture Testbench of variable_freq_clk_tb is
 
-    component variable_clk is
+    component variable_freq_clk is
     port(
         clk100mhz : in STD_LOGIC;
         reset : in STD_LOGIC;
@@ -27,7 +27,7 @@ architecture Testbench of variable_clk_tb is
 
 begin
 
-    unit_variable_clock: variable_clk
+    unit_variable_clock: variable_freq_clk
         port map(
             clk100mhz => clk100mhz,
             precharge => precharge,

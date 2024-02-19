@@ -3,8 +3,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity fixed_clks is
     port(
-        up: in std_logic;
-        down: in std_logic;
         clk100mhz:in std_logic;
         reset:in std_logic;
         clk100mhz_out:out std_logic;

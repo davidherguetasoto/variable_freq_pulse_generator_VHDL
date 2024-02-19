@@ -1,21 +1,22 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity duty_cycle_select is
+entity variable_duty_cycle_clk is
     Port ( clk_in : in STD_LOGIC;
            reset : in STD_LOGIC;
            pulse_out : out STD_LOGIC;
            up : in STD_LOGIC;
            down : in STD_LOGIC);
-end duty_cycle_select;
+end variable_duty_cycle_clk;
 
-architecture Behavioral of duty_cycle_select is
+architecture Behavioral of variable_duty_cycle_clk is
 
     signal reg1:std_logic_vector(9 downto 0);
     signal output1:std_logic;
     signal index1:integer range 1 to 9;
     signal index_out1:integer range 1 to 9;
-    
+
+--FOR HALF WIDTH PULSES    
 --    signal reg2:std_logic_vector(9 downto 0);
 --    signal output2:std_logic;
 --    signal index2:integer range 1 to 9;

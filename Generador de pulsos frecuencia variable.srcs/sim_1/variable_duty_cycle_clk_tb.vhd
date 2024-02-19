@@ -1,13 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity duty_cycle_select_tb is
+entity variable_duty_cycle_clk_tb is
 --  Port ( );
-end duty_cycle_select_tb;
+end variable_duty_cycle_clk_tb;
 
-architecture Testbench of duty_cycle_select_tb is
+architecture Testbench of variable_duty_cycle_clk_tb is
 
-    component duty_cycle_select is 
+    component variable_duty_cycle_clk is 
         port(
             clk_in : in STD_LOGIC;
            reset : in STD_LOGIC;
@@ -26,7 +26,7 @@ architecture Testbench of duty_cycle_select_tb is
     
 begin
     
-    inst_duty_cycle_select:duty_cycle_select
+    inst_duty_cycle_select:variable_duty_cycle_clk
     port map(
         clk_in => clk,
         reset => reset,
