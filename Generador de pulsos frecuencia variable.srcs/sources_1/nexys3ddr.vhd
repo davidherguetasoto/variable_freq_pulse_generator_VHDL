@@ -44,5 +44,6 @@ begin
 
     led<=sw;
     not_reset<= not reset;
+    JB(3)<=clk;
     
 end RTL;
