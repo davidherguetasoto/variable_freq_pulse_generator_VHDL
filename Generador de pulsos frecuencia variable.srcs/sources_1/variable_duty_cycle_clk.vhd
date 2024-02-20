@@ -13,6 +13,7 @@ architecture Behavioral of variable_duty_cycle_clk is
 
     signal reg_out:std_logic_vector(9 downto 0);
     signal index:integer range 0 to 9;
+    signal duty: integer range 0 to 9;
     
     type state is (ResetState, MoveVector,Increment,Decrement);
     signal next_state:state;
@@ -29,19 +30,44 @@ begin
         end if;
      end process;
      
-     STATE_TRANSITIONS:process(up,down,index)
+     STATE_TRANSITIONS:process(up,down,duty,index,present_state)
      begin 
         case present_state is 
             when ResetState=> 
-                
+                if up='1' and down='0' and duty<9 then 
+                    next_state<=Increment;
+                elsif up='0' and down='1' and duty>0 then 
+                    next_state<=Decrement;
+                else 
+                    next_state<=MoveVector;
+                end if;
            
             when MoveVector=> 
-                
+                if up='1' and down='0' and duty<9 then 
+                    next_state<=Increment;
+                elsif up='0' and down='1' and duty>0 then 
+                    next_state<=Decrement;
+                else 
+                    next_state<=MoveVector;
+                end if;
                 
             when Increment=> 
-                
-                
+                if up='1' and down='0' and duty<9 then 
+                    next_state<=Increment;
+                elsif up='0' and down='1' and duty>0 then 
+                    next_state<=Decrement;
+                else 
+                    next_state<=MoveVector;
+                end if;
+                           
            when Decrement => 
+                if up='1' and down='0' and duty<9 then 
+                    next_state<=Increment;
+                elsif up='0' and down='1' and duty>0 then 
+                    next_state<=Decrement;
+                else 
+                    next_state<=MoveVector;
+                end if;
                 
         end case;
     end process; 
@@ -50,23 +76,41 @@ begin
     begin
         case present_state is 
             when ResetState => 
-                index<=reg_out'left;
+                index<=reg_out'left-1;
                 reg_out<="1000000000";
+                duty<=0;
             
             when MoveVector => 
-                reg_out <= reg_out(reg_out'left-1 downto 0)&reg_out(reg_out'left);
-                if index<9 then
+                if rising_edge(clk_in) then
+                    reg_out <= reg_out(reg_out'left-1 downto 0)&reg_out(reg_out'left);
+                    if index<reg_out'left then
+                        index<=index+1;
+                    else 
+                        index<=0;
+                    end if;
+                end if;
+            
+            when Increment =>
+                reg_out(index)<='1';
+                duty<=duty+1;
+                if index>0 then 
+                    index<=index-1;
+                else 
+                    index<=reg_out'left;
+                end if; 
+            
+            when Decrement => 
+                reg_out(index)<='0';
+                duty<=duty-1;
+                if index<reg_out'left then 
                     index<=index+1;
                 else 
                     index<=0;
                 end if;
-            
-            when Increment => 
-            
-            when Decrement => 
-                index <= index -1;
+        end case;
+    end process;
                 
-         
+    pulse_out<=reg_out(9);        
                  
                     
 --    output_generation:process(clk_in,reset)
@@ -97,7 +141,6 @@ begin
 --        end if;
 --    end process;
 
-    
-    pulse_out<=reg1(9); --and output2;
+   
 
 end Behavioral;
