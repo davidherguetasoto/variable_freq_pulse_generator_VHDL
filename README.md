@@ -6,3 +6,5 @@ If the variable frequency pulse train is selected, the user must activate the in
 The generator has been designed for a 100mhz input clk.
 
 The code has been implemented an tested on a Basys3 FPGA development board.
+
+The source VHDL code is placed on the .src folder 
