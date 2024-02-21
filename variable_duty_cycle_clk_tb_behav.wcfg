@@ -10,15 +10,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="100.910 ns"></ZoomStartTime>
-      <ZoomEndTime time="278.211 ns"></ZoomEndTime>
-      <Cursor1Time time="136.410 ns"></Cursor1Time>
+      <ZoomStartTime time="167.301 ns"></ZoomStartTime>
+      <ZoomEndTime time="185.606 ns"></ZoomEndTime>
+      <Cursor1Time time="175.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <NameColumnWidth column_width="161"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="7" />
+   <wave_markers>
+      <marker time="173000" label="" />
+      <marker time="165000" label="" />
+   </wave_markers>
    <wvobject fp_name="/variable_duty_cycle_clk_tb/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
@@ -39,25 +43,12 @@
       <obj_property name="ElementShortName">down</obj_property>
       <obj_property name="ObjectShortName">down</obj_property>
    </wvobject>
-   <wvobject fp_name="/variable_duty_cycle_clk_tb/inst_duty_cycle_select/reg_out" type="array">
-      <obj_property name="ElementShortName">reg_out[9:0]</obj_property>
-      <obj_property name="ObjectShortName">reg_out[9:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
+   <wvobject fp_name="/variable_duty_cycle_clk_tb/inst_duty_cycle_select/duty_cycle" type="other">
+      <obj_property name="ElementShortName">duty_cycle</obj_property>
+      <obj_property name="ObjectShortName">duty_cycle</obj_property>
    </wvobject>
-   <wvobject fp_name="/variable_duty_cycle_clk_tb/inst_duty_cycle_select/index" type="other">
-      <obj_property name="ElementShortName">index</obj_property>
-      <obj_property name="ObjectShortName">index</obj_property>
-   </wvobject>
-   <wvobject fp_name="/variable_duty_cycle_clk_tb/inst_duty_cycle_select/duty" type="other">
-      <obj_property name="ElementShortName">duty</obj_property>
-      <obj_property name="ObjectShortName">duty</obj_property>
-   </wvobject>
-   <wvobject fp_name="/variable_duty_cycle_clk_tb/inst_duty_cycle_select/next_state" type="other">
-      <obj_property name="ElementShortName">next_state</obj_property>
-      <obj_property name="ObjectShortName">next_state</obj_property>
-   </wvobject>
-   <wvobject fp_name="/variable_duty_cycle_clk_tb/inst_duty_cycle_select/present_state" type="other">
-      <obj_property name="ElementShortName">present_state</obj_property>
-      <obj_property name="ObjectShortName">present_state</obj_property>
+   <wvobject fp_name="/variable_duty_cycle_clk_tb/inst_duty_cycle_select/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
    </wvobject>
 </wave_config>

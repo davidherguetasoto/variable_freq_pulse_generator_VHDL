@@ -92,7 +92,7 @@ begin
         up<='1';
         wait for Tclk;
         up<='0';
-        wait for 15*Tclk;
+        wait for 30*Tclk;
         up<='1';
         wait for Tclk;
         up<='0';
